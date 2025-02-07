@@ -1,0 +1,101 @@
+.sponsors
+  display: flex
+  background-color: $light
+  margin-bottom: 63px
+  &-wrapper
+    width: 898px
+    height: 402px
+    display: flex
+    justify-content: space-between
+  &-head
+    width: 263px
+    // height: 188px
+    align-self: center
+    &__title
+      margin-top: 0
+      margin-bottom: 44px
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 48px
+      letter-spacing: 0.2px
+      color: $text-color
+    &__button
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      color: $bacground-block
+      border: 2px solid #1565D8
+      border-radius: 2000px
+      background-color: transparent
+      padding: 13px 24px
+  &-bord
+    padding-top: 33px
+    display: grid
+    grid-template-columns: 180px 180px 180px
+    grid-template-rows: 200px 200px
+    &__item
+      background: #FFFFFF
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05)
+      border-radius: 50%
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      &--airbnb
+        align-self: start
+        width: 140px
+        height: 140px
+        &::before
+          content: ''
+          position: absolute
+          width: 95px
+          height: 30px
+          background-image: url(../img/airbnb-original.svg)
+          background-repeat: no-repeat
+      &--google
+        align-self: end
+        width: 120px
+        height: 120px
+        &::before
+          content: ''
+          position: absolute
+          width: 95px
+          height: 30px
+          background-image: url(../img/google-original.svg)
+          background-repeat: no-repeat
+      &--spotify
+        align-self: center
+        width: 140px
+        height: 140px
+        &::before
+          content: ''
+          position: absolute
+          width: 95px
+          height: 30px
+          background-image: url(../img/spotify-original.svg)
+          background-repeat: no-repeat
+      &--fitbit
+        align-self: end
+        width: 120px
+        height: 120px
+        &::before
+          content: ''
+          position: absolute
+          width: 95px
+          height: 30px
+          background-image: url(../img/fitbit-original.svg)
+          background-repeat: no-repeat
+      &--mapbox
+        align-self: center
+        width: 140px
+        height: 140px
+        &::before
+          content: ''
+          position: absolute
+          width: 95px
+          height: 30px
+          background-image: url(../img/mapbox-original.svg)
+          background-repeat: no-repeat

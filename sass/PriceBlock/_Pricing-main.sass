@@ -1,0 +1,189 @@
+.Pricing
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 56px
+    line-height: 68px
+    text-align: center
+    letter-spacing: 0.2px
+    color: $text-color
+    margin: 0
+    margin-bottom: 24px
+  &__description
+    text-align: center
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $text-color
+    max-width: 680px
+    margin: 0
+    margin-bottom: 28px
+.Pricing
+  &-switch
+    display: flex
+    justify-content: space-between
+    position: relative
+    width: 64px
+    height: 36px
+    border-radius: 18px
+    background-color: #FFFFFF
+    box-shadow: 0px 10px 20px rgba(20, 45, 65, 0.08)
+    order: 0
+    &__label
+      &::after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 5px
+        width: 26px
+        height: 26px
+        border-radius: 50%
+        transform: translateY(-50%)
+        background: linear-gradient(180deg, #35B27D 0%, #28A671 100%)
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2)
+        transition: all 0.4s ease
+        cursor: pointer
+    &__checkbox
+      visibility: hidden
+    &__checkbox:checked + &__label::after
+      left: 32px
+.checkbox-Wrapper
+  width: 285px
+  height: 60px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 64px
+  &__text
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: $card-color
+    text-align: center
+    &:last-child
+      display: flex
+      flex-direction: column
+      transform: translateY(26%)
+    &--first
+      order: -1
+    &__discount
+      font-family: HK Grotesk
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 28px
+      color: $color-green
+.Pricing-grid
+  display: grid
+  grid-column-gap: 30px
+  grid-template-columns: repeat(3, minmax(220px, 320px))
+.Pricing-standart
+  position: relative
+  background: #FFFFFF
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+  border-radius: 8px
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  padding-right: 36px
+  padding-left: 36px
+  padding-bottom: 40px
+  &::before
+    content: ""
+    position: absolute
+    display: block
+    width: 100%
+    height: 3px
+    background: #3F598A
+    top: 0
+    left: 0
+  &__price
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 46px
+    color: $text-color
+  &__price-grey
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $card-color
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    color: $text-color
+    margin: 0
+    margin-bottom: 12px
+  &__subtitle
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: $card-color
+    margin: 0
+    margin-bottom: 24.5px
+  &__line
+    display: block
+    width: 248px
+    height: 1px
+    border: 1px solid #E5EAF4
+    align-self: center
+    margin-bottom: 32.5px
+  &__checkText
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $text-color
+    padding-left: 12px
+  &__checkWrapper
+    display: flex
+.Pricing-standart-button
+  background-color: transparent
+  border: 2px solid $bacground-block
+  box-sizing: border-box
+  border-radius: 2000px
+  width: 248px
+  height: 48px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__text
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: $bacground-block
+    padding-left: 24px
+  &__icon
+    font-family: Font Awesome 5 Free
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 16px
+    color: $bacground-block
+    padding-right: 15px
+.blockWrapper
+  padding-top: 48px
+  margin-bottom: 18px
+.checkbox-block
+  display: flex
+  flex-direction: column
+  height: 120px
+  justify-content: space-between
+  margin-bottom: 84px

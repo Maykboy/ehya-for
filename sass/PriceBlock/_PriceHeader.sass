@@ -1,0 +1,138 @@
+.color-wrapper
+  background: linear-gradient(180deg, rgba(250, 251, 251, 0.0001) 0%, #F8FBFF 100%)
+.header
+  &-wrapper
+    height: 100px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    // margin-bottom: 96px
+  &-button
+    background-color: transparent
+    border: 2px solid $bacground-block
+    border-radius: 2000px
+    padding: 11.5px 22.5px
+    max-height: 48px
+    text-decoration: none
+    color: $bacground-block
+    font-family: Open Sans
+    font-style: norma
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    cursor: pointer
+    &:active, &:hover, &:focus
+      outline: 0
+      outline-offset: 0
+.menu
+  display: flex
+  &__mobile-button
+    display: none
+  &-nav
+    &--btn
+      display: none
+  &__list
+    width: 423px
+    display: flex
+    list-style: none
+    justify-content: space-between
+    margin-right: 40px
+    padding: 0
+    position: relative
+  &__link
+    text-decoration: none
+    color: $text-color
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+.navbar-hidden
+  display: none
+.navbar
+  z-index: 10
+  position: absolute
+  width: 260px
+  height: 338px
+  top: 41px
+  flex-direction: column
+  justify-content: space-around
+  list-style: none
+  display: none
+  background-color: $light
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+  border-radius: 12px
+  &-container
+    width: 196px
+    height: 22px
+    align-items: center
+    display: flex
+    justify-content: space-between
+  &--active
+    display: flex
+  &__link
+    text-decoration: none
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $text-color
+  &__visible
+    &--active
+      color: $bacground-block
+    &-right
+      color: $text-color
+.drop
+  position: absolute
+  flex-direction: column
+  justify-content: space-around
+  left: 250px
+  width: 240px
+  height: 256px
+  top: 50%
+  background: $light
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+  border-radius: 12px
+  list-style: none
+  display: none
+  &--active
+    display: flex
+  &__link
+    text-decoration: none
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $text-color
+.fa-angle-down
+  font-style: normal
+  font-weight: 900
+  font-size: 14px
+  line-height: 16px
+  margin-left: 4px
+  cursor: pointer
+.fa-angle-right
+  font-style: normal
+  font-weight: 900
+  font-size: 14px
+  line-height: 16px
+  cursor: pointer
+.navbar_mobile
+  display: none
+.navbar-angle-down
+  color: $text-color
+  display: inline
+  &--mobile
+    // display: none
+.navbar-angle-right
+  color: $text-color
+  display: inline
+  &--active
+    color: $bacground-block
+  &--mobile
+    display: none
+.navbar__angle-right
+  &--active
+    color: $bacground-block

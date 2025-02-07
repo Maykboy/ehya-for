@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ehya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/priceStyle.css" />
+
+  <!-- <script src="https://kit.fontawesome.com/7dfabf1b67.js" crossorigin="anonymous" defer></script> -->
+  <script src="js/jquery-3.5.1.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="color-wrapper">
+    <header class="header header--mobile_fixed">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="#" class="logo logo--main">
+            <img src="img/Logo-color.svg" alt="Logo: ehya" class="logo__image" />
+          </a>
+          <nav class="menu">
+            <button class="button menu__mobile-button">
+              <img src="img/mobile-cross.svg" alt="Icon:cross" class="menu__mobile-icon">
+            </button>
+            <ul class="menu__list">
+              <li>
+                <a href="" class="menu__link">Home</a>
+              </li>
+              <li>
+                <a href="#down-1" class="menu__link menu__active">Landings
+                  <span id="down-1" class="navbar-angle-down navbar-angle-down--mobile fas fa-angle-down"></span>
+                </a>
+                <ul class="navbar-hidden">
+                  <li>
+                    <a href="#down-2" class="navbar-hidden__link navbar-hidden__visible">Services</a>
+                    <span id="down-2" class="navbar-angle-down navbar-angle-down--mobile fas fa-angle-down"></span>
+                    <ul class="navbar-services">
+                      <li>
+                        <a class="navbar-services__link" href="#">software Library</a>
+                      </li>
+                      <li>
+                        <a class="navbar-services__link" href="#">Insurance</a>
+                      </li>
+                      <li>
+                        <a class="navbar-services__link" href="#">Converence</a>
+                      </li>
+                      <li>
+                        <a class="navbar-services__link" href="#">Rental</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="navbar-hidden__link" href="#">Products</a>
+                    <span class="navbar-angle-right navbar-angle-right--mobile fas fa-angle-right"></span>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="menu__link menu__visible">Pages
+                  <span class="navbar-angle-down fas fa-angle-down"></span>
+                  <span class="navbar-angle-right navbar-angle-right--mobile fas fa-angle-right"></span>
+                </a>
+                <ul class="navbar">
+                  <li class="navbar-container">
+                    <a href="#" class="navbar__link">Company</a>
+                    <span class="navbar__angle-right fas fa-angle-right"></span>
+                  </li>
+                  <li class="navbar-container">
+                    <a href="#" class="navbar__link">Career</a>
+                    <span class="navbar__angle-right fas fa-angle-right"></span>
+                  </li>
+                  <li class="navbar-container">
+                    <a href="#" class="navbar__link">Blog</a>
+                    <span class="navbar__angle-right fas fa-angle-right"></span>
+                  </li>
+                  <li class="navbar-container">
+                    <a href="#ang-1" class="navbar__link navbar__visible">Utility - Sign in</a>
+                    <span id="ang-1" class="navbar__angle-right fas fa-angle-right"></span>
+                    <ul class="drop">
+                      <li>
+                        <a href="#" class="drop__link">Basic</a>
+                      </li>
+                      <li>
+                        <a href="#" class="drop__link">Right Cover</a>
+                      </li>
+                      <li>
+                        <a href="#" class="drop__link">Left Cover</a>
+                      </li>
+                      <li>
+                        <a href="#" class="drop__link">Modal</a>
+                      </li>
+                      <li>
+                        <a href="#" class="drop__link">Modal with Image</a>
+                      </li>
+                      <li>
+                        <a href="#" class="drop__link">Illustration</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navbar-container">
+                    <a href="#" class="navbar__link">Utility - Sign up</a>
+                    <span class="fas fa-angle-right"></span>
+                  </li>
+                  <li class="navbar-container">
+                    <a href="#" class="navbar__link">Utility - Password Reset</a>
+                    <span class="fas fa-angle-right"></span>
+                  </li>
+                  <li class="navbar-container">
+                    <a href="#" class="navbar__link">Utility - Error 404</a>
+                    <span class="fas fa-angle-right"></span>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="" class="menu__link">Docs</a>
+                <span class="navbar-angle-right navbar-angle-right--mobile fas fa-angle-right"></span>
+              </li>
+              <li>
+                <a href="" class="menu__link menu__link--mobile_hidden">Help</a>
+              </li>
+            </ul>
+            <button data-href="#get-it" data-toggle="modal" class="header-button">
+              Get it now
+            </button>
+          </nav>
+          <button class="button menu-nav menu-nav--btn">
+            <span class="menu-nav__line"></span>
+            <span class="menu-nav__line"></span>
+            <span class="menu-nav__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /.header -->
+    <section class="Pricing">
+      <div class="container">
+        <div class="Pricing-wrapper">
+          <h1 class="Pricing__title">Our pricing plan made simple</h1>
+          <p class="Pricing__description">
+            All types of businesses need access to development resources, so we give you the option to decide how much you need to use.
+          </p>
+          <div class="checkbox-Wrapper">
+            <div class="Pricing-switch">
+              <input type="checkbox" class="Pricing-switch__checkbox" id="checkbox">
+              <label for="checkbox" class="Pricing-switch__label"></label>
+            </div>
+            <label class="checkbox-Wrapper__text checkbox-Wrapper__text--first">Bill Monthly</label>
+            <label class="checkbox-Wrapper__text">Bill Annually<span class="checkbox-Wrapper__discount">Save 15%</span></label>
+          </div>
+          <div class="Pricing-grid">
+            <div class="Pricing-standart">
+              <div class="blockWrapper">
+                <span class="Pricing-standart__price">$39</span>
+                <span class="Pricing-standart__price-grey">/month</span>
+              </div>
+              <h1 class="Pricing-standart__title">Standard</h1>
+              <p class="Pricing-standart__subtitle">All the basics for businesses that are just getting started.</p>
+              <span class="Pricing-standart__line"></span>
+               <div class="checkbox-block">
+                <div class="Pricing-standart__checkWrapper">
+                  <img src="img/Icon-check.svg" alt="Icon-check" class="Pricing-standart__checkIcon">
+                  <span class="Pricing-standart__checkText">Single project use</span>
+                </div>
+                <div class="Pricing-standart__checkWrapper">
+                  <img src="img/Icon-check.svg" alt="Icon-check" class="Pricing-standart__checkIcon">
+                  <span class="Pricing-standart__checkText">Basic dashboard</span>
+                </div>
+                <div class="Pricing-standart__checkWrapper">
+                  <img src="img/Icon-check.svg" alt="Icon-check" class="Pricing-standart__checkIcon">
+                  <span class="Pricing-standart__checkText">All components included</span>
+                </div>
+              </div>
+              <button type="button" class="button Pricing-standart-button">
+                <span class="Pricing-standart-button__text">Get Started</span>
+                <span class="Pricing-standart-button__icon fas fa-arrow-right"></span>
+              </button>
+            </div>
+            <div class="Pricing-standart Pricing-standart--essentials">
+              <div class="blockWrapper">
+                <span class="Pricing-standart__price">$39</span>
+                <span class="Pricing-standart__price-grey">/month</span>
+              </div>
+              <h1 class="Pricing-standart__title">Standard</h1>
+              <p class="Pricing-standart__subtitle">All the basics for businesses that are just getting started.</p>
+              <span class="Pricing-standart__line"></span>
+              <div class="checkbox-block">
+                <div class="Pricing-standart__checkWrapper">
+                  <img src="img/Icon-check.svg" alt="Icon-check" class="Pricing-standart__checkIcon">
+                  <span class="Pricing-standart__checkText">Single project use</span>
+                </div>
+                <div class="Pricing-standart__checkWrapper">
+                  <img src="img/Icon-check.svg" alt="Icon-check" class="Pricing-standart__checkIcon">
+                  <span class="Pricing-standart__checkText">Basic dashboard</span>
+                </div>
+                <div class="Pricing-standart__checkWrapper">
+                  <img src="img/Icon-check.svg" alt="Icon-check" class="Pricing-standart__checkIcon">
+                  <span class="Pricing-standart__checkText">All components included</span>
+                </div>
+              </div>
+              <button type="button" class="button Pricing-standart-button">
+                <span class="Pricing-standart-button__text">Get Started</span>
+                <span class="Pricing-standart-button__icon fas fa-arrow-right"></span>
+              </button>
+            </div>
+            <div class="Pricing-standart">
+              <div class="blockWrapper">
+                <span class="Pricing-standart__price">$39</span>
+                <span class="Pricing-standart__price-grey">/month</span>
+              </div>
+              <h1 class="Pricing-standart__title">Standard</h1>
+              <p class="Pricing-standart__subtitle">All the basics for businesses that are just getting started.</p>
+              <span class="Pricing-standart__line"></span>
+              <div class="checkbox-block">
+                <div class="Pricing-standart__checkWrapper">
+                  <img src="img/Icon-check.svg" alt="Icon-check" class="Pricing-standart__checkIcon">
+                  <span class="Pricing-standart__checkText">Single project use</span>
+                </div>
+                <div class="Pricing-standart__checkWrapper">
+                  <img src="img/Icon-check.svg" alt="Icon-check" class="Pricing-standart__checkIcon">
+                  <span class="Pricing-standart__checkText">Basic dashboard</span>
+                </div>
+                <div class="Pricing-standart__checkWrapper">
+                  <img src="img/Icon-check.svg" alt="Icon-check" class="Pricing-standart__checkIcon">
+                  <span class="Pricing-standart__checkText">All components included</span>
+                </div>
+              </div>
+              <button type="button" class="button Pricing-standart-button">
+                <span class="Pricing-standart-button__text">Get Started</span>
+                <span class="Pricing-standart-button__icon fas fa-arrow-right"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+   
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-info">
+          <img src="img/Logo-color.svg" alt="Logo:ehya" class="logo footer__logo" />
+          <p class="footer__description">
+            Build a modern and creative website with crealand
+          </p>
+          <div class="footer-social">
+            <a href="#" class="footer-social__link">
+              <span class="footer-social__wraps-overlay"></span>
+              <img src="img/Icon-google.svg" alt="Icon: google" class="footer-social__google" />
+            </a>
+            <a href="#" class="footer-social__link">
+              <span class="footer-social__wraps-overlay"></span>
+              <img src="img/Icon-twitter.svg" alt="Icon: twitter" class="footer-social__twitter" />
+            </a>
+            <a href="#" class="footer-social__link">
+              <span class="footer-social__wrap-overlay"></span>
+              <img src="img/Icon-instagram.svg" alt="Icon: instagram" class="footer-social__instagram" />
+            </a>
+            <a href="#" class="footer-social__link">
+              <span class="footer-social__wrap-overlay"></span>
+              <img src="img/Icon-in.svg" alt="Icon: in" class="footer-social__in" />
+            </a>
+          </div>
+        </div>
+        <div class="footer__list">
+          <h3 class="footer__title">Product</h3>
+          <ul class="footer__ul">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Landingpage</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Features</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Documentation</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Referral Program</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__list">
+          <h3 class="footer__title">Services</h3>
+          <ul class="footer__ul">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Documentation</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Design</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Themes</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Illustrations</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">UI Kit</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__list footer__list--company">
+          <h3 class="footer__title">Company</h3>
+          <ul class="footer__ul">
+            <li class="footer__item">
+              <a href="#" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Careers</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__list footer__list--more">
+          <h3 class="footer__title">More</h3>
+          <ul class="footer__ul">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Documentation</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">License</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Changelog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-follove">
+        <div class="footer-follove__wrap">
+          <i class="footer-follove__icon fas fa-heart"></i>
+        </div>
+        <span class="footer-follove__description">Copyright © 2019. Crafted with love.</span>
+      </div>
+    </div>
+  </footer>
+  <div class="modal" id="get-it">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <i class="fas fa-times"></i>
+      </a>
+      <h3 class="modal__title modal__title--mb-3">Let’s join us</h3>
+      <div class="modal-button-group">
+        <a href="#" class="button modal-button-group__button">
+          <img src="img/Bitmap-google.png" alt="Icon: google" class="modal-button-group__icon" />
+        </a>
+        <a href="#" class="modal-button-group__link">Sign up with Google</a>
+      </div>
+      <div class="sing-line">
+        <span class="sing-line__decor sing-line__decor--right"></span>
+        <a href="#" class="modal__sing-link">Or, sign up with your email</a>
+        <span class="sing-line__decor sing-line__decor--leaft"></span>
+      </div>
+      <form action="send.php" method="POST" class="modal__form form">
+        <h4 class="modal__name">Your name*</h4>
+        <input type="text" class="input modal__input" placeholder="Gilroy Brown" name="name" required minlength="2" />
+        <span class="modal__mail">Email address*</span>
+        <input type="email" class="input modal__input" placeholder="Email" name="email" required />
+        <span class="modal__pass">Password*</span>
+        <input type="password" class="input modal__input" placeholder="Enter password" name="Password" minlength="10"
+          required />
+        <label class="modal__box">
+          <input type="checkbox" class="modal__check-box" />
+          <span class="modal__check-fake"></span>
+          <span class="modal__info">Agree to terms & conditions</span>
+        </label>
+        <button class="button modal__button-up">Sign up</button>
+      </form>
+      <div class="modal-sing-wrap">
+        <a href="#" class="modal-sing-wrap__forgot">Already have an account?</a>
+        <a href="#" class="modal-sing-wrap__login">Sign in now</a>
+      </div>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+</body>
+
+</html>

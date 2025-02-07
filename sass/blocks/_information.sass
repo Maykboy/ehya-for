@@ -1,0 +1,102 @@
+.information
+  display: flex
+  background: linear-gradient(180deg, #F8FBFF 0%, rgba(250, 251, 251, 0.0001) 100%)
+  &__text-wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 64px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    color: $text-color
+    margin: 0
+  &__subtitle
+    max-width: 750px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    color: $card-color
+    text-align: center
+    margin: 0
+.information-card
+  display: flex
+  width: 1088px
+  min-height: 258px
+  background-color: $light
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+  border-radius: 8px 8px 16px 16px
+  align-items: center
+  justify-content: space-between
+  position: relative
+  &::after
+    content: ''
+    width: 100%
+    height: 3px
+    background-color: $bacground-block
+    position: absolute
+    top: 0
+  &__item
+    display: flex
+    flex-direction: column
+    position: relative
+    width: 250px
+    height: 258px
+    background-color: $light
+    align-items: center
+    justify-content: center
+    &::after
+      content: ''
+      position: absolute
+      width: 1px
+      height: 258px
+      opacity: 0.5
+      border-right: 1px solid #E5EAF4
+      right: 0
+      top: 0
+      bottom: 0
+      left: 0
+  &__num
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    color: $text-color
+    margin-bottom: 2px
+  &__text
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    color: $card-color
+  &__badge
+    width: 48px
+    height: 48px
+    background-color: $bacground-block
+    border-radius: 2000px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 32px
+    &::before
+      content: ''
+      position: absolute
+      height: 16px
+      width: 16px
+.fa-star,
+.fa-user-check,
+.fa-download,
+.fa-fire
+  color: $light
+  font-style: normal
+  font-weight: 900
+  font-size: 14px
+  line-height: 16px

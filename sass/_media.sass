@@ -1,0 +1,657 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .information-card
+    max-width: 960px
+    &::after
+      width: 960px
+  .grid-wrap
+    grid-template-rows: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr
+    &__card
+      max-width: 360px
+  .faq
+    flex-direction: column
+    &__wrapper
+      max-width: 672px
+      margin-bottom: 22px
+  .faq-card
+    max-width: 672px
+  .footer
+    padding-right: 0
+    &-wrapper
+      grid-gap: 22px
+      grid-template-columns: 243px 145px 145px 145px 145px
+@media (max-width: 992px)
+  .container
+    max-width: 700px
+  .main
+    &__title
+      font-size: 40px
+      line-height: 58px
+  .hero-card
+    grid-template-columns: minmax(226px, 344px)
+    grid-template-rows: 226px 226px
+    max-width: 700px
+    height: 100%
+    justify-content: center
+  .card-super
+    &__container
+      border: none
+  .card-dependencies
+    &__container
+      border: none
+  .card-well
+    &__container
+      border: none
+  .card-real
+    &__container
+      border: none
+  .explore
+    display: none
+  .information
+    &__title
+      font-size: 32px
+      line-height: 40px
+    &__wrapper
+  .information-card
+    max-width: 700px
+    flex-wrap: wrap
+    min-height: 258px
+    &::after
+      width: 100%
+    &__item
+      flex-basis: 50%
+      padding-bottom: 20px
+      padding-top: 10px
+      &:nth-last-child(2n+1)
+        order: 1
+        padding-bottom: 15px
+      &::after
+        height: 100%
+      &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 1px
+        opacity: 0.5
+        border-top: 1px solid #E5EAF4
+        right: 0
+        top: 0
+        bottom: 0
+        left: 0
+  .features
+    &-wrapper
+      max-width: 700px
+  .grid-wrap
+    max-width: 700px
+    &__card
+      max-width: 340px
+  .sponsors
+    &-wrapper
+      flex-wrap: wrap
+      width: 100%
+      height: 100%
+      justify-content: center
+    &-head
+      display: flex
+      flex-direction: column
+      align-items: center
+      flex-basis: 60%
+      &__title
+        align-self: center
+      &__button
+        width: 181px
+        height: 48px
+        padding: 0
+    &-bord
+      z-index: 10
+  .swiper-container
+    max-width: 700px
+  .reviews
+    max-width: 700px
+  .subsequent
+    &-wrap
+      flex-direction: column
+    &__title
+      text-align: center
+  .footer
+    padding-right: 0
+    &-wrapper
+      grid-template-columns: 243px 145px 145px
+      grid-template-rows: 1fr 1fr
+    &__list
+      &--company
+        grid-column: 2
+      &--more
+        grid-column: 3
+@media (max-width: 768px)
+  .container
+    max-width: 672px
+  .header
+    padding-top: 8px
+    &-button
+      display: flex
+      border: 2px solid $bacground-block
+      color: $bacground-block
+      max-width: 256px
+      justify-content: center
+    &--mobile
+      &_fixed
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &-wrapper
+      height: 64px
+      width: 25%
+      justify-content: space-around
+  .menu
+    display: none
+    &--active
+      display: flex
+      flex-direction: column
+      position: absolute
+      padding-left: 24px
+      padding-top: 36px
+      width: 304px
+      height: 490px
+      background-color: $light
+      box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+      border-radius: 12px
+      right: 0
+      top: 0
+      transform: translate(-15%, 28px)
+      z-index: 10
+    &__active
+      &--active
+        color: $bacground-block !important
+    &__mobile-button
+      display: flex
+      align-items: center
+      justify-content: center
+      position: absolute
+      z-index: 15
+      transform: translate(-16px, 19px)
+      border: none
+      background: transparent
+      top: 0
+      right: 0
+      width: 24px
+      height: 24px
+    &__mobile-icon
+      display: flex
+      width: 16px
+      height: 16px
+      position: absolute
+      z-index: 15
+    &__list
+      flex-direction: column
+      margin: 0
+      max-width: 100%
+      max-height: 100%
+    &__list li
+      margin-bottom: 20px
+      &:last-child
+        margin: 0
+    &__link
+      color: $text-color
+      &--mobile_hidden
+        display: none
+    &-nav
+      &--btn
+        height: 24px
+        width: 24px
+        display: flex
+        align-items: center
+        justify-content: space-around
+        flex-direction: column
+        background-color: transparent
+        position: absolute
+        right: 59px
+      &__line
+        width: 22px
+        height: 2.2px
+        background-color: $light
+  .navbar-hidden
+    display: none
+    list-style: none
+    &--active
+      display: flex
+      flex-direction: column
+    &__link
+      text-decoration: none
+      color: $text-color
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      &--active
+        font-weight: 600
+        color: $bacground-block
+  .navbar-services
+    display: none
+    flex-direction: column
+    position: relative
+    list-style: none
+    &--active
+      display: flex
+    &__link
+      text-decoration: none
+      color: $text-color
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+  .navbar
+    display: none
+    &__angle
+      &-down
+        color: $bacground-block
+  .main
+    &__wrapper
+      margin-bottom: 80px
+    &__text
+      padding: 0 24px
+    &__title
+      font-size: 32px
+      line-height: 40px
+      margin-bottom: 48px
+    &__subtitle
+      text-align: center
+      font-size: 16px
+      line-height: 28px
+      max-width: 272px
+    &__archive
+      font-size: 14px
+      line-height: 24px
+  .button-wrapper
+    width: 100%
+  .elem-wrap
+    display: none
+  .elem-wrapper
+    left: -500px
+  .button-wrapper
+    flex-direction: column
+    align-items: center
+  .button-white
+    margin-bottom: 12px
+  .navbar-angle-down
+    &--mobile
+      color: $text-color
+      display: inline
+      &_active
+        color: $bacground-block
+  .navbar-angle-right
+    &--mobile
+      color: $text-color
+      display: inline
+  .hero
+    padding-right: 16px
+    padding-left: 16px
+    &-card
+      grid-template-columns: minmax(288px, 644px)
+      grid-template-rows: 244px
+    &::after
+      bottom: 92%
+      left: -80px
+  .card
+    &-super
+      flex-direction: column
+    &-dependencies
+      flex-direction: column
+      grid-row: 2
+      grid-column: 1
+    &-well
+      flex-direction: column
+      grid-row: 3
+    &-real
+      flex-direction: column
+      grid-row: 4
+      grid-column: 1
+  .explore
+    display: flex
+    &__link
+      font-size: 16px
+      line-height: 22px
+  .install
+    &-box
+      filter: none
+      width: 576px
+      height: 100%
+      overflow: hidden
+      &__button
+        margin-right: 8px
+        min-width: 55px
+      &__wrap
+        justify-content: start
+        width: 100%
+        height: 100%
+        padding-right: 0
+        overflow: scroll
+        &::-webkit-scrollbar
+          width: 0px
+          height: 0px
+        &::after
+          content: ''
+          display: block
+          flex-shrink: 0
+          width: 32px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+    &__subtitle
+      font-size: 16px
+      line-height: 28px
+  .box-wrap
+    width: 90%
+    flex-wrap: wrap
+  .information
+    &__wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding-right: 16px
+      padding-left: 16px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+    &__subtitle
+      font-size: 16px
+      line-height: 28px
+      padding: 0 24px
+    &-card
+      width: 100%
+      &__item
+        flex-basis: 100%
+  .features
+    &-wrapper
+      padding-left: 16px
+      padding-right: 16px
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__subtitle
+      font-size: 16px
+      line-height: 28px
+  .grid-wrap
+    grid-template-columns: 1fr
+    grid-gap: 16px
+    padding-right: 16px
+    padding-left: 16px
+    &__icon
+      border: none
+    &__card
+      max-width: 672px
+      height: 286px
+      justify-content: center
+      align-items: center
+    &__title
+      font-size: 20px
+      line-height: 24px
+    &__subtitle
+      max-width: 560px
+      text-align: center
+      font-size: 16px
+      line-height: 28px
+    &__link
+      font-size: 16px
+      line-height: 22px
+  .sponsors
+    &-head
+      &__title
+        font-size: 28px
+        line-height: 36px
+    &-bord
+      grid-template-columns: 160px fit-content( 155px )
+      grid-template-rows: 217px 217px 217px
+      max-width: 494px
+      &__item
+        &--google
+          align-self: end
+          justify-self: center
+          grid-column: span 2
+        &--airbnb
+          grid-column-start: 1
+          grid-row-start: 3
+          align-self: start
+        &--spotify
+          align-self: end
+          grid-row-start: 2
+          grid-column-start: 2
+        &--fitbit
+          grid-column-start: 1
+          grid-row-start: 2
+          align-self: start
+        &--mapbox
+          grid-column-start: 2
+          grid-row-start: 3
+          align-self: end
+  .testimonials
+    padding-bottom: 96px
+  .faq
+    margin-bottom: 96px
+    padding-right: 16px
+    padding-left: 16px
+    &__wrapper
+      max-width: 672px
+      margin-bottom: 46px
+      display: flex
+      align-items: center
+    &__title
+      max-width: 433px
+      text-align: center
+      font-size: 28px
+      line-height: 36px
+    &__subtitle
+      max-width: 507px
+      text-align: center
+      font-size: 16px
+      line-height: 28px
+  .box-wrapp
+    flex-wrap: wrap
+    display: flex
+    justify-content: center
+    margin: 0
+    padding: 0
+  .faq-box
+    width: 320px
+    flex-basis: 51%
+    align-self: start
+    &__text
+      padding-right: 0
+  .faq-card
+    width: 100%
+    height: 391px
+    &::before
+      width: 100%
+    &__title
+      font-size: 16px
+      line-height: 22px
+    &__text
+      font-size: 14px
+      line-height: 24px
+  .reviews
+    &__title
+      margin-bottom: 40px
+      max-width: 640px
+      text-align: center
+      font-size: 28px
+      line-height: 44px
+      letter-spacing: 0.1px
+  .swiper-container
+    height: 400px
+  .subsequent
+    &-wrap
+      min-height: 380px
+    &__title
+      font-size: 28px
+      line-height: 36px
+  .button
+    &-section
+      flex-direction: column
+    &-color
+      margin-right: 0
+      margin-bottom: 12px
+      &__link
+        font-size: 16px
+        line-height: 22px
+    &-clear
+      &__link
+        font-size: 16px
+        line-height: 22px
+  .footer
+    &-wrapper
+      grid-gap: 28px
+      padding-right: 48px
+      padding-left: 48px
+      grid-template-rows: 1fr 1fr 1fr
+      grid-template-columns: 1fr 1fr
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+      order: 2
+      justify-self: center
+      grid-column-start: span 2
+    &__logo
+      width: 77px
+      grid-template: 24px
+      margin-bottom: 16px
+    &__description
+      font-size: 14px
+      line-height: 24px
+      max-width: 263px
+      text-align: center
+      margin-bottom: 16px
+    &__list
+      &--company
+        grid-column-start: 1
+      &--more
+        grid-column-start: 2
+    &-follove
+      display: none
+@media (max-width: 576px)
+  .container
+    max-width: 500px
+  .header
+    &-wrapper
+      width: 40%
+  .menu-nav
+    &--btn
+      right: 34px
+  .menu
+    &--active
+      right: -38px
+      top: -15px
+  .main
+    &__wrapper
+      margin-bottom: 46px
+    &__archive
+      max-width: 272px
+  .hero
+    &::after
+      left: -40px
+  .card-super
+    flex-wrap: nowrap
+    &__subtitle
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      padding-right: 24px
+      padding-left: 24px
+  .card-dependencies
+    &__subtitle
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      padding-right: 24px
+      padding-left: 24px
+  .card-well
+    &__subtitle
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      padding-right: 24px
+      padding-left: 24px
+  .card-real
+    &__subtitle
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      padding-right: 24px
+      padding-left: 24px
+  .install
+    &__title
+      max-width: 272px
+    &-box
+      width: 288px
+  .color-install
+    &::after
+      bottom: 60%
+      left: -40px
+  .information
+    &__title
+      max-width: 272px
+  .grid-wrap
+    &__card
+      padding: 35px 24px 0 24px
+  .color-test
+    &::after
+      left: -33px
+  .testimonials
+    padding-bottom: 56px
+  .faq
+    margin-bottom: 56px
+    &__wrapper
+      margin-bottom: 112px
+    &__title
+      max-width: 272px
+    &__subtitle
+      max-width: 272px
+  .faq-box
+    flex-basis: 90%
+  .footer
+    padding-top: 48px
+  .modal
+    overflow: hidden
+    height: 813px
+    &__close
+      top: 28px
+      right: 15px
+    &__title
+      font-size: 24px
+      line-height: 36px
+    &__dialog
+      padding-right: 32px
+      padding-left: 32px
+      min-width: 320px
+      overflow-y: scroll
+      height: 100%
+    &__sing-link
+      font-size: 12px
+      line-height: 16px
+    &__form
+      width: 100%
+    &__button-up
+      width: 100%
+  .modal-button-group
+    width: 100%
+    &__link
+      font-size: 12px
+      line-height: 16px
+  .modal-sing-wrap
+    &__login
+      font-size: 12px
+      line-height: 18px
+    &__forgot
+      font-size: 12px
+      line-height: 18px
+  .sing-line
+    &__decor
+      width: 32px
